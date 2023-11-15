@@ -2,7 +2,9 @@ SAVEDCONF ?= /etc/portage/savedconfig
 PATCHES ?= /etc/portage/patches
 
 all:
+	chmod +x ./scripts/*
 	cp -f -R ./dotfiles/.* ~/
+	feh --bg-scale ./bg/purple_city.png
 	doas cp -f ./scripts/* /usr/local/bin
 	doas mkdir -p $(SAVEDCONF)/x11-terms
 	doas mkdir -p $(SAVEDCONF)/x11-wm
