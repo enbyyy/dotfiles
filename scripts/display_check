@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ $(xrandr | grep -i " connected" | wc -l) = 2 ]
+then
+	xrandr --output eDP --off
+	sleep 0.1
+	~/.fehbg
+fi
