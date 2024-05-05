@@ -1,0 +1,15 @@
+#!/bin/sh
+
+policy_path="/sys/devices/platform/asus-nb-wmi/throttle_thermal_policy"
+temp_path="/sys/class/thermal/thermal_zone*/temp"
+
+while true; do
+        if [ $(cat $temp_path) -gt 75000 ] && [ $(cat $policy_path) = 0 ]
+        then
+                echo 1 > $policy_path
+        elif [ $(cat $temp_path) -lt 59000 ] && [ $(cat $policy_path) = 1 ]
+        then
+                echo 0 > $policy_path
+        fi
+        sleep 1
+done

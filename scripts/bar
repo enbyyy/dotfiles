@@ -1,8 +1,0 @@
-#!/bin/sh
-
-while true; do
-	time=$(date "+%h %d %H:%M")
-	battery=$(cat /sys/class/power_supply/BAT0/capacity)
-	xsetroot -name " $battery% | $time "
-	sleep 10
-done

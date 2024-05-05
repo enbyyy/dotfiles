@@ -4,9 +4,4 @@
 
 <br>
 
-```
-git clone https://github.com/enbyyy/dotfiles.git
-cd dotfiles
-make
-doas emerge zsh scrot xclip rofi sxhkd picom feh hack dwm st
-```
+<p align="center"> Simple bspwm + polybar + urxvt + rofi rice. </p>
