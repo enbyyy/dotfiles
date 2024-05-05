@@ -1,7 +1,5 @@
 # dotfiles
 
-<p align="center"> <img src="https://github.com/enbyyy/dotfiles/assets/150830424/bdd378d7-7424-4d86-92e6-1721d475ad1d"> </p>
+<p align="center"> <img src="https://github.com/enbyyy/dotfiles/assets/150830424/e26df85a-ba9c-49c5-84fb-94a90e2ecba3"> </p>
 
-<br>
-
-<p align="center"> Simple bspwm + polybar + urxvt + rofi rice. </p>
+<p align="center"><strong>simple bspwm + polybar + urxvt + rofi rice</strong></p>
