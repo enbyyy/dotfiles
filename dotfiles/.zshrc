@@ -5,8 +5,8 @@ compinit
 
 alias ls="ls --color"
 
-PROMPT="%n:%F{blue}%~%f/ $ "
+PROMPT="%n:%F{blue}%~%f/ %B❯%b "
 
 if [ $DISPLAY ]; then
-        neofetch
+        clear
 fi

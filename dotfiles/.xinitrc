@@ -3,11 +3,4 @@ then
  	eval $(dbus-launch --sh-syntax --exit-with-session)
 fi
 
-gentoo-pipewire-launcher &
-~/.fehbg &
-#xsetroot -solid #222222 &
-sxhkd &
-bar &
-picom &
-display_check &
-exec dwm
+exec bspwm
