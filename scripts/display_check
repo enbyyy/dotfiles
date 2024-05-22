@@ -1,8 +1,0 @@
-#!/bin/sh
-
-if [ $(xrandr | grep -i " connected" | wc -l) = 2 ]
-then
-	xrandr --output DP-2 --off
-fi
-
-sh ~/.fehbg

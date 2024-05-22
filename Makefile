@@ -1,5 +1,6 @@
 all:
 	chmod +x ./scripts/*
 	cp -f -R ./dotfiles/.* ~/
-	feh --bg-scale ./bg/cozy_house.png
+	mkdir -p ~/Pix/Bg
+	cp -f ./bg/cozy_house.png ~/Pix/Bg
 	doas cp -f ./scripts/* /usr/local/bin

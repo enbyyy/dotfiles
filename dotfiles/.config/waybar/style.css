@@ -1,0 +1,67 @@
+* {
+    font-family: "Hack";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0);
+}
+
+#workspaces {
+   margin: 10px 15px 5px 15px;
+}
+
+#window, #wireplumber, #memory, #clock, #cpu, #temperature, #battery {
+    margin-top: 10px;
+    border-radius: 12px;
+    padding: 7px 15px 7px 15px;
+    margin-right: 12px;
+    background-color: #0f0f1a;
+}
+
+#window {
+    margin-right: 0;
+    padding: 7px 25px 7px 25px;
+    color: #89e3fa;
+}
+
+#wireplumber {
+    color: 	#fa89ab;
+}
+
+#memory {
+    color: 	#8990fa;
+}
+
+#clock {
+    color: 	#89defa;
+}
+
+#cpu {
+    color: #fa8989;
+}
+
+#temperature {
+    color: #89fac9;
+}
+
+#battery {
+    color: #c989fa;
+}
+
+#workspaces button{
+    color: 	#9889fa;
+    background-color: #0f0f1a;
+    margin-right: 10px;
+    border-radius: 12px;
+    padding: 7px 18px 7px 18px;
+}
+
+#workspaces button.active {
+    background: #9889fa ;
+    color: #09090F;
+    margin-right: 10px;
+    border-radius: 15px;
+    color: black;
+}

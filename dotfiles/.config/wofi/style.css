@@ -1,0 +1,53 @@
+window {
+font-family: Hack;
+margin: 0px;
+border: 1px solid #202038;
+background-color: #0f0f1a;
+border-radius: 12px;
+}
+
+#input {
+margin: 5px;
+border: none;
+color: #f8f8f2;
+background-color: #202038;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #0f0f1a;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #0f0f1a;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #f8f8f2;
+} 
+
+#entry.activatable #text {
+color: #282a36;
+}
+
+#entry > * {
+color: #f8f8f2;
+}
+
+#entry:selected {
+background-color: #202038;
+}
+
+#entry:selected #text {
+font-weight: bold;
+}
