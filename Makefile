@@ -1,6 +1,5 @@
 all:
 	chmod +x ./scripts/*
 	cp -f -R ./dotfiles/.* ~/
-	mkdir -p ~/Pix/Bg
-	cp -f ./bg/cozy_house.png ~/Pix/Bg
+	doas cp -f ./bg/cozy_house.png /usr/share/hyprland/wall0.png
 	doas cp -f ./scripts/* /usr/local/bin
