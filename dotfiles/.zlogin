@@ -1,6 +1,6 @@
-if command -v dbus-launch > /dev/null && test -z "${DBUS_SESSION_BUS_ADDRESS}" 
-then 
- 	eval $(dbus-launch --sh-syntax --exit-with-session)
-fi
-
-exec Hyprland
+while true; do
+	if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+		startx
+	fi
+	sleep 0.1
+done
