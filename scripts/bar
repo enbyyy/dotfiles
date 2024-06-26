@@ -1,0 +1,14 @@
+#!/bin/sh
+
+while true; do
+
+	time=$(date "+%h %d %H:%M")
+	battery=$(cat /sys/class/power_supply/BAT0/capacity)
+	temp_raw=$(cat /sys/class/thermal/thermal_zone*/temp)
+	temp=$((temp_raw / 1000))
+
+	xsetroot -name " $battery% | $temp C | $time "
+
+	sleep 5
+
+done

@@ -4,5 +4,3 @@ if [ $(xrandr | grep -i " connected" | wc -l) = 2 ]
 then
 	xrandr --output DP-2 --off --output DP-0 --mode 2560x1440 --rate 179.88
 fi
-
-sh ~/.fehbg

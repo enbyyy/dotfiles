@@ -5,32 +5,19 @@ configuration {
 }
 
 * {
-    /* Dracula theme colour palette */
-    drac-bgd: #09090F;
-    drac-cur: #44475a;
-    drac-fgd: #f8f8f2;
-    drac-cmt: #6272a4;
-    drac-cya: #8be9fd;
-    drac-grn: #50fa7b;
-    drac-ora: #ffb86c;
-    drac-pnk: #ff79c6;
-    drac-pur: #bd93f9;
-    drac-red: #ff5555;
-    drac-yel: #f1fa8c;
+    font: "Fira Code 12";
 
-    font: "Hack 12";
-
-    foreground: @drac-fgd;
-    background-color: @drac-bgd;
-    active-background: @drac-pur;
-    urgent-background: @drac-red;
-    urgent-foreground: @drac-bgd;
+    foreground: #F8F8F2;
+    background-color: #10101A;
+    active-background: #A796FB;
+    urgent-background: #F28FAD;
+    urgent-foreground: #10101A;
     
     selected-background: @active-background;
     selected-urgent-background: @urgent-background;
     selected-active-background: @active-background;
     separatorcolor: @active-background;
-    bordercolor: @drac-pur;
+    bordercolor: @active-background;
 }
 
 #window {
@@ -125,11 +112,11 @@ configuration {
 }
 #entry {
     spacing:    0;
-    text-color: @drac-fgd;
+    text-color: @foreground;
 }
 #prompt {
     spacing:    0;
-    text-color: @drac-fgd;
+    text-color: @foreground;
 }
 #inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
@@ -138,7 +125,7 @@ configuration {
     expand:     false;
     str:        ">";
     margin:     0px 0.3em 0em 0em ;
-    text-color: @drac-pur;
+    text-color: #A796FB;
 }
 element-text, element-icon {
     background-color: inherit;
